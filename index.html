@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사월에는 봄이 오지 않는다 - 사쿠라바 우즈키 (桜庭 卯月)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Noto Serif KR과 Noto Serif JP를 함께 불러옵니다 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Noto+Serif+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Serif KR', serif; background-color: #09090b; color: #e4e4e7; }
+        /* 한국어 폰트를 우선 적용하고, 없는 한자는 일본어 폰트로 대체합니다 */
+        body { font-family: 'Noto Serif KR', 'Noto Serif JP', serif; background-color: #09090b; color: #e4e4e7; }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         
         /* 붉은 그라데이션 텍스트 */
